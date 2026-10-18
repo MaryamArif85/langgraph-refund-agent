@@ -1,0 +1,43 @@
+.env
+venv/
+__pycache__/
+data/*.csv
+data/*.tmp
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Env & Secrets - CRITICAL
+.env
+.env.local
+*.key
+
+# Data - auto-generated on first run (keep folder, ignore content)
+data/orders.csv
+data/refunds.csv
+# But keep .gitkeep if you add one
+!data/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log
+logs/
+
+# Node / Build (if you add frontend build later)
+node_modules/
+dist/
+build/
+
+# LangGraph checkpoints
+checkpoints/

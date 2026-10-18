@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Support Assistant</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="app">
+  <header class="topbar">
+    <div class="brand">🎧 Support Assistant</div>
+    <div class="live-badge">● Live • Avg response 2 sec</div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-left">
+      <h1>Need help with your order?</h1>
+      <p>Get refund status, track orders, or talk to our team — instantly.</p>
+      <div class="trust-row">
+        <div class="trust">🛡️ 7-Day Refund Guarantee</div>
+        <div class="trust">💳 No duplicate charges</div>
+        <div class="trust">👤 Human review for > $100</div>
+      </div>
+    </div>
+    <div class="process-card">
+      <div>Process</div>
+      <div class="step">💬 Message ✓</div>
+      <div class="step">🔍 Check ✓</div>
+      <div class="step">✅ Resolved ✓</div>
+    </div>
+  </section>
+
+  <section class="tracker" id="tracker" style="display:none">
+    <div class="tracker-head">Live Progress Tracker</div>
+    <div class="progress-line">
+      <div class="p-step" id="p-intent"><div class="circle">○</div><small>Intent</small></div>
+      <div class="p-step" id="p-order"><div class="circle">○</div><small>Order Found</small></div>
+      <div class="p-step" id="p-policy"><div class="circle">○</div><small>Checking Policy</small></div>
+      <div class="p-step" id="p-decision"><div class="circle">○</div><small>Decision</small></div>
+    </div>
+    <div class="chat-bubble" id="chatBubble"></div>
+  </section>
+
+  <div class="chat-area" id="chatArea"></div>
+
+  <footer class="input-footer">
+    <div class="chips">
+      <button data-intent="tracking">🔍 Track My Order</button>
+      <button data-intent="refund" class="active">🔄 Request Refund</button>
+      <button data-intent="cancellation">✕ Cancel Order</button>
+      <button data-intent="complaint">🎧 Talk to Human</button>
+    </div>
+    <div class="inputs">
+      <div class="field"><label>Order ID</label><input id="orderId" placeholder="ORD-1001" /></div>
+      <div class="field grow"><label>Your Message</label><input id="message" placeholder="Type your message..." /><button id="sendBtn">➤</button></div>
+    </div>
+    <div class="footnote" style="display:flex;justify-content:space-between;align-items:center">
+  <span>Thread: <span id="threadDisplay">—</span></span>
+  <button id="clearBtn" style="background:white;border:1px solid #cbd5e1;padding:6px 12px;border-radius:8px;cursor:pointer;font-size:12px">🗑️ Clear Chat</button>
+</div>
+  </footer>
+</div>
+<script src="/static/script.js"></script>
+</body>
+</html>

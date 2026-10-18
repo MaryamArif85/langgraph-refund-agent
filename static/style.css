@@ -1,0 +1,37 @@
+*{box-sizing:border-box;font-family:Inter,system-ui,sans-serif}
+body{margin:0;background:#dbe7f6;color:#0f2040}
+.app{max-width:980px;margin:24px auto;background:#f4f7fc;border-radius:20px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.15)}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:16px 24px;background:white}
+.brand{font-weight:700;font-size:20px}
+.live-badge{background:#e6ecff;padding:6px 12px;border-radius:20px;font-size:13px}
+.hero{display:flex;gap:20px;padding:28px 24px;background:linear-gradient(135deg,#eef5ff,#f8fbff)}
+.hero-left{flex:1}.hero-left h1{font-size:42px;margin:0 0 8px;line-height:1.1}.hero-left p{color:#4b5a7a}
+.trust-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px}
+.trust{background:#d9e6ff;border:1px solid #bdd1ff;padding:10px 14px;border-radius:12px;font-size:13px;font-weight:600}
+.process-card{background:white;border-radius:16px;padding:16px;min-width:210px;box-shadow:0 8px 24px rgba(0,0,0,.08)}
+.step{display:flex;justify-content:space-between;background:#f7f9ff;border:1px solid #e6ecff;padding:10px 12px;border-radius:10px;margin-top:8px;font-size:14px}
+.tracker{margin:0 24px;background:white;border-radius:16px;padding:16px}
+.progress-line{display:flex;align-items:center;gap:6px;margin:10px 0}
+.p-step{text-align:center;flex:1}.circle{width:28px;height:28px;border:2px solid #cbd5e1;border-radius:50%;display:grid;place-items:center;margin:0 auto 4px}
+.p-step.done .circle{background:#10b981;border-color:#10b981;color:white}
+.p-step.active .circle{border-color:#2563eb;color:#2563eb}
+.chat-area{padding:16px 24px;display:flex;flex-direction:column;gap:12px;max-height:360px;overflow-y:auto}
+.msg{padding:12px 14px;border-radius:12px;max-width:85%;font-size:14px;line-height:1.4}
+.msg.user{align-self:flex-end;background:#2563eb;color:white}
+.msg.bot{align-self:flex-start;background:white;border:1px solid #e2e8f0}
+.msg.approved{border-left:4px solid #10b981}.msg.review{border-left:4px solid #f59e0b}
+.chat-bubble{margin-top:12px;background:#dbe8ff;padding:12px;border-radius:12px;font-size:13px}
+.input-footer{padding:16px 24px;background:#eef3fb;border-top:1px solid #e2e8f0}
+.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:10px}
+.chips button{white-space:nowrap;padding:8px 14px;border-radius:20px;border:1px solid #b5c7e5;background:#e8efff;cursor:pointer}
+.chips button.active{background:#2563eb;color:white}
+.inputs{display:flex;gap:12px;flex-wrap:wrap}
+.field{display:flex;flex-direction:column;gap:4px}.field.grow{flex:1;min-width:240px}
+.field label{font-size:12px;font-weight:600}
+.field input{padding:10px 12px;border-radius:10px;border:1px solid #cbd5e1}
+#sendBtn{background:#2563eb;color:white;border:none;width:44px;border-radius:10px;cursor:pointer;font-size:18px}
+.footnote{font-size:11px;color:#64748b;margin-top:10px;text-align:center}
+.review-actions{margin-top:10px;display:flex;gap:8px}
+.btn-approve{background:#10b981;color:white;padding:8px 14px;border-radius:8px;border:none;cursor:pointer}
+.btn-reject{background:#ef4444;color:white;padding:8px 14px;border-radius:8px;border:none;cursor:pointer}
+@media(max-width:700px){.hero{flex-direction:column}.hero-left h1{font-size:28px}.inputs{flex-direction:column}}
