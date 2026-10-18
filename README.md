@@ -1,6 +1,6 @@
 # LangGraph Customer Support & Refund Agent — CSV Edition
 
-> Agentic support bot built with **LangGraph + Groq + FastAPI** + Vanilla JS UI. No SQLite — uses `data/orders.csv` for orders and `data/refunds.csv` for a demo refund ledger.
+> Agentic  customer support & refund system built with **LangGraph + Groq + FastAPI + Human-in-the-loop approval** + Vanilla JS UI. No SQLite — uses `data/orders.csv` for orders and `data/refunds.csv` for a demo refund ledger.
 >
 > ### Windows PowerShell Setup
 
